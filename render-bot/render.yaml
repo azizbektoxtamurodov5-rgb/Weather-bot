@@ -1,0 +1,11 @@
+services:
+  - type: worker
+    name: weather-telegram-bot
+    runtime: node
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        value: 8607609282:AAEtdAifqTtCC3-1teOSX0LLwmBgGGQl-5Q
+      - key: WEATHER_API_KEY
+        value: cfb18895da0d8bf04a8307cc8550fe0d
